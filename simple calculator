@@ -1,0 +1,62 @@
+# ============================================
+# TASK 1: Simple Calculator
+# Codveda Python Internship - Level 1
+# ============================================
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero is not allowed!"
+    return a / b
+
+def calculator():
+    print("=" * 40)
+    print("        SIMPLE CALCULATOR")
+    print("=" * 40)
+
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+    except ValueError:
+        print("Error: Please enter valid numbers!")
+        return
+
+    print("\nSelect Operation:")
+    print("1. Addition       (+)")
+    print("2. Subtraction    (-)")
+    print("3. Multiplication (*)")
+    print("4. Division       (/)")
+
+    choice = input("\nEnter your choice (1/2/3/4): ")
+
+    if choice == '1':
+        result = add(num1, num2)
+        print(f"\nResult: {num1} + {num2} = {result}")
+    elif choice == '2':
+        result = subtract(num1, num2)
+        print(f"\nResult: {num1} - {num2} = {result}")
+    elif choice == '3':
+        result = multiply(num1, num2)
+        print(f"\nResult: {num1} * {num2} = {result}")
+    elif choice == '4':
+        result = divide(num1, num2)
+        print(f"\nResult: {num1} / {num2} = {result}")
+    else:
+        print("Error: Invalid choice! Please select 1, 2, 3, or 4.")
+        return
+
+    # Ask if user wants to calculate again
+    again = input("\nDo you want to calculate again? (yes/no): ").lower()
+    if again == 'yes':
+        calculator()
+
+# Run the calculator
+calculator()

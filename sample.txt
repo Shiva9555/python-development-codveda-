@@ -1,0 +1,5 @@
+Python is a great programming language.
+It is easy to learn and very powerful.
+Python is used in web development, data science, and AI.
+Many developers love Python because it is simple and clean.
+Learning Python opens many opportunities in the tech industry.

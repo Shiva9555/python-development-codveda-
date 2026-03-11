@@ -1,0 +1,9 @@
+Hello! This is a sample text file for encryption testing.
+Codveda Python Internship - Level 3, Task 2.
+
+This file demonstrates:
+  - Caesar Cipher encryption (simple shift-based)
+  - Fernet encryption (AES-128, production-grade)
+
+Confidential data: PROJECT-CODE-2024
+Secret key value : CODVEDA-INTERN-XYZ

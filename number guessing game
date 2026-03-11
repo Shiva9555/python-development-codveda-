@@ -1,0 +1,57 @@
+# ============================================
+# TASK 2: Number Guessing Game
+# Codveda Python Internship - Level 1
+# ============================================
+
+import random
+
+def number_guessing_game():
+    print("=" * 40)
+    print("      NUMBER GUESSING GAME")
+    print("=" * 40)
+    print("I have selected a number between 1 and 100.")
+
+    secret_number = random.randint(1, 100)
+    max_attempts = 10
+    attempts_used = 0
+
+    print(f"You have {max_attempts} attempts to guess it!\n")
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            guess = int(input(f"Attempt {attempt}/{max_attempts} - Enter your guess: "))
+        except ValueError:
+            print("Please enter a valid number!\n")
+            continue
+
+        attempts_used += 1
+
+        if guess < 1 or guess > 100:
+            print("Please guess a number between 1 and 100!\n")
+            continue
+
+        if guess == secret_number:
+            print(f"\n🎉 Congratulations! You guessed it correctly!")
+            print(f"The number was: {secret_number}")
+            print(f"You got it in {attempts_used} attempt(s)!")
+            break
+        elif guess < secret_number:
+            remaining = max_attempts - attempt
+            print(f"Too Low! ⬆️  Try a higher number. ({remaining} attempts left)\n")
+        else:
+            remaining = max_attempts - attempt
+            print(f"Too High! ⬇️  Try a lower number. ({remaining} attempts left)\n")
+    else:
+        # This runs when loop finishes without break (no correct guess)
+        print(f"\n😢 Game Over! You've used all {max_attempts} attempts.")
+        print(f"The correct number was: {secret_number}")
+
+    # Ask if user wants to play again
+    play_again = input("\nDo you want to play again? (yes/no): ").lower()
+    if play_again == 'yes':
+        number_guessing_game()
+    else:
+        print("\nThanks for playing! Goodbye! 👋")
+
+# Run the game
+number_guessing_game()

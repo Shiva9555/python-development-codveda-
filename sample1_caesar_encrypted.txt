@@ -1,0 +1,14 @@
+# CAESAR CIPHER ENCRYPTED FILE
+# Shift    : 25
+# Encrypted: 2026-03-11 09:17:35
+# Original : sample1.txt
+# =============================================
+Gdkkn! Sghr hr z rzlokd sdws ehkd enq dmbqxoshnm sdrshmf.
+Bncudcz Oxsgnm Hmsdqmrgho - Kdudk 3, Szrj 2.
+
+Sghr ehkd cdlnmrsqzsdr:
+  - Bzdrzq Bhogdq dmbqxoshnm (rhlokd rghes-azrdc)
+  - Edqmds dmbqxoshnm (ZDR-128, oqnctbshnm-fqzcd)
+
+Bnmehcdmshzk czsz: OQNIDBS-BNCD-2024
+Rdbqds jdx uzktd : BNCUDCZ-HMSDQM-WXY
